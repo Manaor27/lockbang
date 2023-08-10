@@ -7,6 +7,7 @@ use App\Models\Nilai;
 use App\Models\Mapel;
 use App\Models\Ulangan;
 use App\Models\Siswa;
+use App\Models\Kelas;
 use DB;
 use Auth;
 
