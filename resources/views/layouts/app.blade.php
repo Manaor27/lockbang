@@ -126,12 +126,6 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="dataHari" class="nav-link">
-                  <i class="fas fa-bars nav-icon"></i>
-                  <p>Hari</p>
-                </a>
-              </li>
-              <li class="nav-item">
                 <a href="dataPredikat" class="nav-link">
                   <i class="fas fa-clipboard nav-icon"></i>
                   <p>Predikat</p>

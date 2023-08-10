@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuruController;
-use App\Http\Controllers\HariController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WaliController;
 use App\Http\Controllers\KelasController;
@@ -35,7 +34,6 @@ Route::middleware(['auth'])->group(function () {
         Route::get('dataJurusan', [JurusanController::class, 'index']);
         Route::get('dataMataPelajaran', [MapelController::class, 'index']);
         Route::get('dataWali', [WaliController::class, 'wali']);
-        Route::get('dataHari', [HariController::class, 'index']);
         Route::get('dataPredikat', [NilaiController::class, 'index']);
         Route::get('user', [UserController::class, 'index']);
 
@@ -51,8 +49,6 @@ Route::middleware(['auth'])->group(function () {
         Route::get('hapusMapel', [MapelController::class, 'hapusMapel']);
         Route::post('simpanWali', [WaliController::class, 'simpanWali']);
         Route::get('hapusWali', [WaliController::class, 'hapusWali']);
-        Route::post('simpanHari', [HariController::class, 'simpanHari']);
-        Route::get('hapusHari', [HariController::class, 'hapusHari']);
         Route::post('simpanPredikat', [NilaiController::class, 'simpanPredikat']);
         Route::get('hapusPredikat', [NilaiController::class, 'hapusPredikat']);
         Route::get('hapusWali', [WaliController::class, 'hapusWali']);
